@@ -10,17 +10,10 @@ public class Main {
         System.out.println("Chương trình 3 : Giải phương trình bậc 2");
         int choice = scan.nextInt();
         switch (choice) {
-            case 1:
-                Triangle.checkTriangle();
-                break;
-            case 2:
-                TBC.xepLoai();
-                break;
-            case 3:
-                QuadraticEquation.calculater();
-                break;
-            default:
-                System.exit(0);
+            case 1 -> Triangle.checkTriangle();
+            case 2 -> TBC.xepLoai();
+            case 3 -> QuadraticEquation.calculate();
+            default -> System.exit(0);
         }
     }
 }
